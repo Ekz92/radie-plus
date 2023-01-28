@@ -1,0 +1,433 @@
+object frmPayement_CR: TfrmPayement_CR
+  Left = 0
+  Top = 0
+  Caption = 'PAYEMENT RADIE'
+  ClientHeight = 337
+  ClientWidth = 453
+  Color = 8404992
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnActivate = FormActivate
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 16
+  object Bevel3: TBevel
+    Left = 7
+    Top = 8
+    Width = 436
+    Height = 56
+    Shape = bsFrame
+  end
+  object Bevel2: TBevel
+    Left = 7
+    Top = 176
+    Width = 436
+    Height = 124
+    Shape = bsFrame
+  end
+  object Bevel1: TBevel
+    Left = 7
+    Top = 68
+    Width = 436
+    Height = 103
+    Shape = bsFrame
+  end
+  object Label8: TLabel
+    Left = 0
+    Top = 321
+    Width = 453
+    Height = 16
+    Align = alBottom
+    ExplicitWidth = 4
+  end
+  object Label1: TLabel
+    Left = 18
+    Top = 123
+    Width = 61
+    Height = 16
+    Caption = 'N'#176' Cr'#233'dit :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 18
+    Top = 146
+    Width = 100
+    Height = 16
+    Caption = 'Nom &&  pr'#233'nom :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 18
+    Top = 185
+    Width = 91
+    Height = 16
+    Caption = 'Montant cr'#233'dit :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 18
+    Top = 208
+    Width = 90
+    Height = 16
+    Caption = 'Montant pay'#233' : '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 18
+    Top = 254
+    Width = 45
+    Height = 16
+    Caption = 'Solde : '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 100
+    Top = 306
+    Width = 91
+    Height = 27
+    Caption = 'Enregistr'#233
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton1Click
+  end
+  object SpeedButton2: TSpeedButton
+    Left = 254
+    Top = 306
+    Width = 99
+    Height = 27
+    Caption = 'Annuler'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton2Click
+  end
+  object Label7: TLabel
+    Left = 0
+    Top = 0
+    Width = 453
+    Height = 16
+    Align = alTop
+    ExplicitWidth = 4
+  end
+  object Label9: TLabel
+    Left = 18
+    Top = 276
+    Width = 55
+    Height = 16
+    Caption = 'Montant :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 18
+    Top = 231
+    Width = 90
+    Height = 16
+    Caption = 'Inter'#234't calcul'#233' :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 18
+    Top = 76
+    Width = 74
+    Height = 16
+    Caption = 'N'#176' Membre :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 18
+    Top = 16
+    Width = 38
+    Height = 16
+    Caption = 'Gest. :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label12: TLabel
+    Left = 18
+    Top = 40
+    Width = 38
+    Height = 16
+    Caption = 'Code :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label13: TLabel
+    Left = 18
+    Top = 99
+    Width = 71
+    Height = 16
+    Caption = 'N'#176' Compte :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object edcredit: TEdit
+    Left = 126
+    Top = 120
+    Width = 305
+    Height = 24
+    Ctl3D = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = True
+    ParentCtl3D = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 1
+    StyleElements = [seBorder]
+  end
+  object ednum_membre: TEdit
+    Left = 126
+    Top = 74
+    Width = 305
+    Height = 24
+    Cursor = crMultiDrag
+    Ctl3D = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = True
+    ParentCtl3D = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 0
+    StyleElements = [seBorder]
+    OnDblClick = ednum_membreDblClick
+  end
+  object ednom: TEdit
+    Left = 126
+    Top = 143
+    Width = 305
+    Height = 24
+    Ctl3D = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = True
+    ParentCtl3D = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 2
+    StyleElements = [seBorder]
+  end
+  object edmont_cr: TEdit
+    Left = 126
+    Top = 182
+    Width = 223
+    Height = 24
+    Alignment = taRightJustify
+    Ctl3D = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = True
+    ParentCtl3D = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 3
+    StyleElements = [seBorder]
+  end
+  object edmon_paye: TEdit
+    Left = 126
+    Top = 205
+    Width = 223
+    Height = 24
+    Alignment = taRightJustify
+    Ctl3D = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = True
+    ParentCtl3D = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 4
+    StyleElements = [seBorder]
+  end
+  object edsolde: TEdit
+    Left = 126
+    Top = 251
+    Width = 223
+    Height = 24
+    Alignment = taRightJustify
+    Ctl3D = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = True
+    ParentCtl3D = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 5
+    StyleElements = [seBorder]
+  end
+  object edmontant: TEdit
+    Left = 126
+    Top = 274
+    Width = 223
+    Height = 24
+    Alignment = taRightJustify
+    Ctl3D = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = True
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 6
+    StyleElements = [seBorder]
+    OnKeyPress = edmontantKeyPress
+  end
+  object edInteret: TEdit
+    Left = 126
+    Top = 228
+    Width = 223
+    Height = 24
+    Alignment = taRightJustify
+    Ctl3D = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = True
+    ParentCtl3D = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 7
+    StyleElements = [seBorder]
+  end
+  object cbListe_Gest: TComboBox
+    Left = 126
+    Top = 13
+    Width = 305
+    Height = 24
+    Style = csDropDownList
+    Ctl3D = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clHighlightText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = True
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 8
+    OnCloseUp = cbListe_GestCloseUp
+  end
+  object ed_code: TEdit
+    Left = 126
+    Top = 38
+    Width = 150
+    Height = 24
+    Ctl3D = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = True
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 9
+    StyleElements = [seBorder]
+  end
+  object ednum_compte: TEdit
+    Left = 126
+    Top = 97
+    Width = 305
+    Height = 24
+    Cursor = crMultiDrag
+    Ctl3D = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = True
+    ParentCtl3D = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 10
+    StyleElements = [seBorder]
+    OnDblClick = ednum_membreDblClick
+  end
+end
